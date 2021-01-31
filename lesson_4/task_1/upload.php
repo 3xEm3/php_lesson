@@ -7,12 +7,12 @@ $path = 'img/' . $_FILES['image']['name'];
 $size = 1024 * 1024 * 5; // 5Mbyte
 $types = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'image/svg');
 
-if($_FILES[image][size] > $size ){
+if($_FILES['image']['size'] > $size ){
     die ('Очень большой файл');
 }
 
 if(!in_array($type, $types)){
-    die ('Это не картинка');
+    die ('Формат картинки не поддерживается!');
 }
 
 if(copy($tmp_name,$path)) {
