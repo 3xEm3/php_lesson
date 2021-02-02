@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <title>Галерея</title>
 </head>
@@ -30,7 +30,7 @@
     </style>
     
     <div class="gallery">
-        <?php include('gullery.php') ?>
+        <?php include('gallery.php') ?>
     
     <div>
     
