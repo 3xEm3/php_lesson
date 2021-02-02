@@ -21,7 +21,7 @@ switch($type){
 	
 	default: die ('Это не картинка!');
 }
-//Решил написать сам + php.net в помощь
+
 function thumbImg($path, $name, $type){
     $w_img = getimagesize($path)[0];
     $h_img = getimagesize($path)[1];
