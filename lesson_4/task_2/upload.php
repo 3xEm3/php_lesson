@@ -39,7 +39,7 @@ function thumbImg($path, $name, $type){
 			imagefill($thumb, 0, 0, $color); 
 			
 			imagecopyresized($thumb, $source, 0, 0, 0, 0, $new_w_img, $new_h_img, $w_img, $h_img);
-			imagepng($thumb, 'img/thumb/thumb_'.$name.'.png');
+			imagepng($thumb, 'img/thumb/thumb_' . $name . '.png');
 		break;
 		
 		case 'image/jpeg':
@@ -47,7 +47,7 @@ function thumbImg($path, $name, $type){
 			$source = imagecreatefromjpeg($path);
 			
 			imagecopyresized($thumb, $source, 0, 0, 0, 0, $new_w_img, $new_h_img, $w_img, $h_img);
-			imagejpeg($thumb, 'img/thumb/thumb_'.$name.'.jpeg');
+			imagejpeg($thumb, 'img/thumb/thumb_' . $name . '.jpeg');
 		break;		
 	}
 }
