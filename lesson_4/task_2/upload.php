@@ -6,17 +6,17 @@ $tmp_name = $_FILES['image']['tmp_name'];
 
 $size = 3145728;
 
-if($_FILES['image']['size'] > $size ){
+if($_FILES['image']['size'] > $size){
     die ('Очень большая картинка');
 }
 
 switch($type){
 	case 'image/png':
-		$path = 'img/'.$name.'.png';
+		$path = 'img/' . $name . '.png';
 		break;
 	
 	case 'image/jpeg':
-		$path = 'img/'.$name.'.jpeg';
+		$path = 'img/' . $name . '.jpeg';
 		break;
 	
 	default: die ('Это не картинка!');
